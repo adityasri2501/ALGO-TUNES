@@ -2,14 +2,6 @@ alert("WELCOME TO ALGO TUNES WHERE CODE MEETS SYMPHONY");
 console.log("WELCOME TO ALGO TUNES WHERE CODE MEETS SYMPHONY");
 
 let songIndex = 0;
-let audioElement = new Audio(songs[0].filePath);
-masterSongName.innerText = songs[songIndex].songName;
-let masterPlay = document.getElementById('masterPlay');
-let myProgressBar = document.getElementById('myProgressBar');
-let gif = document.getElementById('gif');
-let masterSongName = document.getElementById('masterSongName');
-let songItems = Array.from(document.getElementsByClassName('songItem'));
-
 let songs = [
     { songName: "SULTAN KGF CHAPTER 2", filePath: "https://res.cloudinary.com/dpdtprvue/video/upload/v1747755901/0_oqn1oj.mp3", coverPath: "covers/1.jpeg" },
     { songName: "ME AND THE DEVIL", filePath: "https://res.cloudinary.com/dpdtprvue/video/upload/v1747755900/1_jy69bm.mp3", coverPath: "covers/2.jpg" },
@@ -33,6 +25,16 @@ let songs = [
     { songName: "GANGNAM STYLE", filePath: "https://res.cloudinary.com/dpdtprvue/video/upload/v1747755913/19_hbpgvk.mp3", coverPath: "covers/20.jpeg" },
     { songName: "BOLLYWOOD MASHUP", filePath: "https://res.cloudinary.com/dpdtprvue/video/upload/v1747755927/20_knpfau.mp3", coverPath: "covers/21.jpg" },
 ]
+
+let audioElement = new Audio(songs[0].filePath);
+// masterSongName.innerText = songs[songIndex].songName;
+let masterPlay = document.getElementById('masterPlay');
+let myProgressBar = document.getElementById('myProgressBar');
+let gif = document.getElementById('gif');
+let masterSongName = document.getElementById('masterSongName');
+let songItems = Array.from(document.getElementsByClassName('songItem'));
+
+// console.log("Attempting to play:", audio.src);
 
 // audioElement.play();
 
